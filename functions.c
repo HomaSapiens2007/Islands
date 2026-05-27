@@ -84,6 +84,8 @@ void bfs(int** matrix, int rows, int cols, int start_x, int start_y,
             }
         }
     }
+    free(queue_x);
+    free(queue_y);
 }
 
 Island** find_islands(int** matrix, int rows, int cols, int* island_count) {
