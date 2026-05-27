@@ -1,0 +1,15 @@
+void init_island(Island* island);
+void add_point(Island* island, int x, int y);
+void free_island(Island* island);
+int** read_matrix(const char* filename, int rows, int cols);
+void bfs(int** matrix, int rows, int cols, int start_x, int start_y, int** visited, Island* island);
+Island** find_islands(int** matrix, int rows, int cols, int* island_count);
+void display_island(int rows, int cols, Island* island, const char* title);
+void print_matrix(int** matrix, int rows, int cols);
+IslandStats compute_stats(Island* island, int rows, int cols);
+int compare_stats(const void* a, const void* b);
+void append_node(IslandNode** head, IslandStats stats);
+int list_length(IslandNode* head);
+IslandStats* list_to_array(IslandNode* head, int length);
+void free_list(IslandNode* head);
+void print_areas_list(IslandNode* head);
