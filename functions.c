@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "calls.h"
+#include <string.h>
+#include <math.h>
 
 void init_island(Island* island) {
     island->capacity = 10;
