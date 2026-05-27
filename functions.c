@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "calls.h"
+
 void init_island(Island* island) {
     island->capacity = 10;
     island->size = 0;
