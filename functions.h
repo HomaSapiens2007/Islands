@@ -86,7 +86,7 @@ Island** find_islands(int** matrix, int rows, int cols, int* island_count) {
         visited[i] = (int*)calloc(cols, sizeof(int));
     }
     
-    Island** islands = (Island**)malloc(MAX_ROWS * sizeof(Island*));
+    Island** islands = (Island**)malloc((rows+1)*(cols+1)/4 * sizeof(Island*));
     *island_count = 0;
     
     for (int i = 0; i < rows; i++) {
