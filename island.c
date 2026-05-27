@@ -3,9 +3,6 @@
 #include <string.h>
 #include <math.h>
 
-#define MAX_ROWS 1000
-#define MAX_COLS 1000
-
 typedef struct {
     int x, y;
 } Point;
